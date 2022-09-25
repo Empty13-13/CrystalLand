@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+<body>
+<div class="wrapper">
+  @@include('html/_header.htm',{})
+  <main class="page">
+    <div class="main">
+      <div class="main__wrapper">
+        <div class="main__container">
+          <div class="main__back">
+            <img src="img/back.jpg" alt="">
+          </div>
+          <div class="main__left">
+          </div>
+          <div class="main__right">
+          </div>
+          <div class="main__objects">
+            <a href="" class="objects-main objects-main__coming1">
+              <img src="img/coming1.png" alt="">
+            </a>
+            <a data-popup="#farm" href="#" class="objects-main objects-main__farm">
+              <img src="img/farm.png" alt="">
+            </a>
+            <a data-popup="#animals" href="#" class="objects-main objects-main__enclosure">
+              <img src="img/enclosure.png" alt="">
+            </a>
+            <a  data-popup="#mine" href="#" class="objects-main objects-main__mine">
+              <img src="img/mine.png" alt="">
+            </a>
+            <a data-popup="#smelter" href="#" class="objects-main objects-main__smelter">
+              <img src="img/smelter.png" alt="">
+            </a>
+            <a data-popup="#forge" href="#" class="objects-main objects-main__house">
+              <img src="img/house.png" alt="">
+            </a>
+            <a data-popup="#forge" href="#" class="objects-main objects-main__forge">
+              <img src="img/forge.png" alt="">
+            </a>
+            <a href="" class="objects-main objects-main__coming2">
+              <img src="img/coming2.png" alt="">
+            </a>
+            <a href="#popup333" class="objects-main objects-main__market">
+              <img src="img/market.png" alt="">
+            </a>
+            <a href="#forest" class="objects-main objects-main__forest">
+              <img src="img/forest.png" alt="">
+            </a>
+          </div>
+          <div class="main__body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  @@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+</html>

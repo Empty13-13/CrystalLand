@@ -1,0 +1,57 @@
+.footer {
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+  
+  @media (min-height:1630px){
+    margin-bottom: 60px;
+  }
+  
+  
+  &__container {
+  }
+  
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__menu {
+    display: flex;
+    
+    li {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-right: 23px;
+      @include adaptiveValue('margin-right',23,10,1500,700);
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 38px;
+    border-radius: 20px;
+  
+    @include adaptiveValue('width', 120, 75, 1500, 700);
+    @include adaptiveValue('height', 38, 23, 1500, 700);
+    @include adaptiveValue('font-size', 16, 12, 1500, 700);
+  }
+  
+  &__submenu {
+    position: absolute;
+    bottom: calc(100% + 6px);
+  }
+  
+  
+}
